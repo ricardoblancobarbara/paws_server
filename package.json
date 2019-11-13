@@ -1,11 +1,11 @@
 {
-  "name": "pawsserver",
+  "name": "pawsapi",
   "version": "1.0.0",
   "description": "server for paws app",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./node_modules/http-server/bin/http-server"
+    "start": "node app.js"
   },
   "author": "Ricardo Blanco",
   "license": "MIT",

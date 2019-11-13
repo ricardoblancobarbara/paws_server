@@ -1,13 +1,12 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('paws', 'postgres', 'Juli-1701', {
-    host: 'localhost',
-    dialect: 'postgres'
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+    dialect: 'postgres',
 });
 
 sequelize.authenticate().then(
     function() {
-        console.log('Connected to paws postgres database');
+        console.log('postgres database is connected');
     },
     function(err) {
         console.log(err);
